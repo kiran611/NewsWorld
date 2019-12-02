@@ -1,0 +1,40 @@
+:local(html) {
+  box-sizing: border-box;
+}
+
+:local(*, *:before, *:after) {
+  box-sizing: inherit;
+}
+
+:local(.column) {
+  float: right;
+  width: 25.8%;
+  margin-bottom: 16px;
+  margin-left: 23%;
+  padding: 0 8px;
+}
+
+:local(.card) {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+:local(.container) {
+  padding: 0 16px;
+}
+
+:local(.container::after, .row::after) {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+:local(.title) {
+  color: grey;
+}
+:local(.image) {
+  width: 100%;
+}
+:local(.dafault) {
+  background-color: whitesmoke;
+  padding: 5%;
+}
